@@ -3,7 +3,7 @@ var router = express.Router();
 var path = require('path');
 
 var pg = require('pg');
-var connectionString = process.env.DATABASE_URL || 'postgres://klznsddwwbjgxt:VXDnGZamoKQbOPzs-twE7OIhQt@ec2-107-21-222-62.compute-1.amazonaws.com:5432/d56la9lb9rd8u7';
+var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/wknd_04';
 
 router.post('/data', function(req,res){
     //console.log(req);
